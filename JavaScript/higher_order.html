@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const radiusArr = [1, 6, 3, 5, 8];
+      
+        function area(r) {
+          return Math.PI * r * r;
+        };
+      
+        calculate = function (arr, func) {
+          const result = [];
+          for (let i = 0; i < arr.length; i++) {
+            result.push(func(arr[i]));
+          }
+          return result;
+        };
+      
+        //polyfill format
+        Array.prototype.calci = function(func) {
+          const result = [];
+          for (let i = 0; i < this.length; i++) {
+            result.push(func(this[i]));
+          }
+          return result;
+        };
+      
+        console.log(calculate(radiusArr, area));
+        console.log(radiusArr.calci(area));
+        console.log(radiusArr.map(area));
+      
+        function doubleVal(x){
+          return x*2;
+        }
+      
+        console.log(radiusArr.map(function double(x){ return (x*2)}));
+        console.log(radiusArr.map(doubleVal));
+      
+        //Function to check if a number is even
+        function isEven(x){
+          return x%2 ===0;
+        }
+      
+        console.log(radiusArr.filter(isEven));
+        
+        //Function to check if a number is prime
+        function isPrime(num){
+            if(num<2){
+                return false;
+            }
+            for(let i=2;i<=Math.sqrt(num);i++){
+                if(num%i===0){
+                    return false;
+                }
+            }
+            return true;
+        }
+        
+        console.log(radiusArr.filter(isPrime));
+
+        console.log(radiusArr.filter(function isOdd(x){return (x%2 != 0)}));
+      
+        function getSumOfArr(arr){
+          sum =0;
+          for(let i=0;i<arr.length;i++){
+              sum = arr[i]+ sum;
+          }
+          return sum;
+        }
+        // Functions for reducing an array to the sum and maximum value
+        function sumOfArr(res, curr){
+          res = res + curr;
+          return res;
+        }
+      
+        console.log(radiusArr.reduce(sumOfArr));
+      
+        function maxOfArr(res, curr){
+          if(curr > res){
+              res = curr;
+          }
+          return res;
+        }
+      
+        console.log(radiusArr.reduce(maxOfArr,0));
+      
+        // Array of user objects
+        const users = [
+          {fistname:"sat", lastname:"nav", age:40},
+          {fistname:"rat", lastname:"nav", age:30},
+          {fistname:"bat", lastname:"nav", age:40},
+          {fistname:"cat", lastname:"nav", age:50},
+          {fistname:"mat", lastname:"nav", age:30},
+        ];
+      
+        function groupByAgeFunc(res,curr){
+          if(res[curr.age]){
+            res[curr.age] = ++res[curr.age];
+          }else{
+            res[curr.age]= 1;
+          }
+          return res;
+        }
+      const groupByAge = users.reduce(groupByAgeFunc,{});
+      console.log(groupByAge);      
+</script>
+</body>
+</html>

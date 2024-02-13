@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function customSort(inputString) {
+  var characters = inputString.split(""); // Convert the string to an array of characters
+  var length = characters.length;
+
+  for (let i = 0; i < length - 1; i++) {
+    for (let j = 0; j < length - i - 1; j++) {
+      if (characters[j] > characters[j + 1]) {
+        // Swap characters[j] and characters[j+1]
+        var temp = characters[j];
+        characters[j] = characters[j + 1];
+        characters[j + 1] = temp;
+      }
+    }
+  }
+
+  return characters.join(""); // Convert the sorted array back to a string
+}
+
+var inputString = "example";
+var sortedString = customSort(inputString);
+console.log(sortedString); // Output: "aeelmpx"
+    </script>
+</body>
+</html>

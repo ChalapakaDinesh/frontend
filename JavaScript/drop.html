@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <select id="countries">
+            <option value="India">India</option>
+            <option value="Sweden">Sweden</option>
+            <option value="Italy">Italy</option>
+            <option value="Australia">Australia</option>
+            <option value="United States">United States of America</option>
+            <option value="Colombia">Colombia</option>
+            <option value="Japan">Japan</option>
+            <option value="Iran">Iran</option>
+            <option value="United Arab Emirates">United Arab Emirates</option>
+            <option value="Germany">Germany</option>
+            <option value="Cambodia">Cambodia</option>
+            <option value="New Zealand">New Zealand</option>
+            <option value="United Kingdom">United Kingdom</option>
+            <option value="Netherlands">Netherlands</option>
+            <option value="Denmark">Denmark</option>
+            <option value="Norway">Norway</option>
+            <option value="Belgium">Belgium</option>
+            <option value="China">China</option>
+            <option value="France">France</option>
+            <option value="Bangladesh">Bangladesh</option>
+            <option value="Finland">Finland</option>
+            <option value="Spain">Spain</option>
+            <option value="Switzerland">Switzerland</option>
+            <option value="Argentina">Argentina</option>
+            <option value="Russia">Russia</option>
+            <option value="Portugal">Portugal</option>
+        </select>
+        <input type="text" id="drop" name="country" readonly style="width: 150px;">
+    </div>
+    <div>
+        <input type="text" id="search" placeholder="Search for a country" oninput="cheko()">
+        <ul id="list_of_countries">
+		<li>India</li>
+        <li>Sweden</li>
+        <li>Italy</li>
+        <li>Australia</li>
+        <li>United States of America</li>
+        <li>Colombia</li>
+        <li>Japan</li>
+        <li>Iran</li>
+        <li>United Arab Emirates</li>
+        <li>Germany</li>
+        <li>Cambodia</li>
+        <li>New Zealand</li>
+        <li>United Kingdom</li>
+        <li>Netherlands</li>
+        <li>Denmark</li>
+        <li>Norway</li>
+        <li>Belgium</li>
+        <li>China</li>
+        <li>France</li>
+        <li>Bangladesh</li>
+        <li>Denmark</li>
+        <li>Finland</li>
+        <li>Spain</li>
+        <li>Switzerland</li>
+        <li>Argentina</li>
+        <li>Russia</li>
+        <li>Portugal</li>
+		</ul>
+    </div>
+    <script>
+        const select = document.getElementById("countries");
+        const drop = document.getElementById("drop");
+        const search = document.getElementById("search");
+        const list = document.getElementById("list_of_countries");
+
+        const countries = [
+            "India", "Sweden", "Italy", "Australia", "United States of America", "Colombia",
+            "Japan", "Iran", "United Arab Emirates", "Germany", "Cambodia", "New Zealand",
+            "United Kingdom", "Netherlands", "Denmark", "Norway", "Belgium", "China", "France",
+            "Bangladesh", "Finland", "Spain", "Switzerland", "Argentina", "Russia", "Portugal"
+        ];
+
+        function miko() {
+            drop.value = select.value;
+        }
+        function cheko() {
+            const searchTerm = search.value.toLowerCase();
+            list.innerHTML = "";
+
+            for (const country of countries) {
+                if (country.toLowerCase().includes(searchTerm)) {
+                    const li = document.createElement("li");
+                    li.textContent = country;
+                    list.appendChild(li);
+                }
+            }
+        }
+    </script>

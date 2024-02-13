@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Converter</title>
+</head>
+<body>
+    <div>
+        <input type="text" id="timeInput" placeholder="Enter time" onkeydown="GiveResult()">
+    </div>
+
+    <div>
+        <select id="formatSelect" onchange="GiveResult()">
+            <option value="ISO">ISO</option>
+            <option value="UTC">UTC</option>
+            <option value="LOCAL">LOCAL</option>
+        </select>
+    </div>
+
+    <div>
+        <input type="text" id="result" readonly style="width:300px;">
+    </div>
+
+    <script>
+        function GiveResult() {
+            var input = document.getElementById("timeInput").value;
+            var format = document.getElementById("formatSelect").value;
+            var result = document.getElementById("result");
+
+            var inputTime = new Date("2023-11-11T" + input);
+
+            if (format === "ISO") {
+                result.value = inputTime.toISOString();
+            } else if (format === "UTC") {
+                result.value = inputTime.toUTCString();
+            } else if (format === "LOCAL") {
+                result.value = inputTime.toLocaleTimeString();
+            } else {
+                result.value = "Invalid format";
+            }
+        }
+    </script>
+</body>
+</html>

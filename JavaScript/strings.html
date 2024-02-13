@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strings</title>
+</head>
+<body>
+    <script>
+        //string length
+        var text = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+        console.log ( text.length);
+        //string slice
+        var sl = "Apple,Banana,Guava";
+        var part = sl.slice(7, 13);
+        console.log(part);
+        //string substring
+        var str = "Apple, Banana, Kiwi";
+        var pa = str.substr(7);
+        console.log(pa);
+        //string replace
+        var txt = "Please visit Microsoft!";
+        var newText = text.replace("Microsoft", "W3Schools");
+        console.log(newText);
+        //string replaceAll
+        var text1 = "JAYARAJ."
+        var text2 = text1.replaceAll("A",("a"));
+        console.log(text2);
+        //to uppercase
+        var text2 = "chalapaka dinesh";
+        console.log(text2.toUpperCase());
+        //to lowercase
+        var text2 = "ROHIT SHARMA";
+        console.log(text2.toLowerCase());
+        //string concat
+        var txt1 = "Hello";
+        var txt2 = "World!";
+        var txt3 = txt1.concat(" ",txt2);
+        console.log(txt3);
+        //string trim
+        var str3="      MarvelUniverse     ";
+        var tst2=str3.trim();
+        console.log(tst2);
+        //string trimstart
+        var text1 = "    Hello World!     ";
+        var tst1 = text1.trimStart();
+        console.log(tst1);
+        //string trimend
+        var str = "     Hello World!     ";
+        var tst=str.trimEnd();
+        console.log(tst);
+        //string padstart
+        var txt4 = "5";
+        var tst3 = txt4.padStart(4,"0");
+        console.log(tst3);
+        //string padend
+        var txt5 = "5";
+        var tst6 = txt4.padEnd(7,"i");
+        console.log(tst6);
+        //string charat
+        var text = "HELLO WORLD";
+        console.log(text.charAt(8));
+        //string charcodeat
+        var text = "HELLO WORLD";
+        console.log(text.charCodeAt(0));
+        //split method
+        var text="Hello!, Myself_Dinesh I_am_22_years_old"
+        var spl=text.split(" ");
+        console.log(spl);
+        //indexof
+        var text = "Tell me about Yourself!";
+        var index = text.indexOf("about");
+        console.log(index);
+        //lastindexof
+        var text = "My favourite place is Ooty!";
+        var index = text.lastIndexOf("John");
+        console.log(index);
+        //search
+        var text = "Please fill the form immediately";
+        var index = text.search("form");
+        console.log(index);
+        //match
+        var text = "The rain in SPAIN stays mainly in the plain";
+        var index=text.match("ain");
+        console.log(index);
+        //includes
+        var text = "What is Your favourite place?";
+        var index= text.includes("dinu");
+        console.log(index);
+        //startswith
+        var text = "Hello world, welcome to the universe.";
+        var index = text.startsWith("Hello");
+        console.log(index);
+        //endswith
+        var text = "My hobby is to play cricket";
+        var index = text.endsWith("cricket");
+        console.log(index);
+       </script>
+    
+</body>
+</html>

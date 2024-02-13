@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var cars = ["Saab", "Volvo", "BMW"];
+        console.log(cars);
+        var cars = [
+                   "Saab",
+                   "Volvo",
+                   "BMW"
+                   ];
+        console.log(cars);
+        var cars = [];
+        cars[0]= "Saab";
+        cars[1]= "Volvo";
+        cars[2]= "BMW";
+        console.log(cars);
+        var cars = new Array("Saab", "Volvo", "BMW");
+        console.log(cars);
+        var cars = ["Saab", "Volvo", "BMW"];
+        var car = cars[0];
+        console.log(car);
+        var cars = ["Saab", "Volvo", "BMW"];
+        var car = cars[0] = "Opel";
+        console.log(car);
+        var person = ["John", "Doe", 46];
+        console.log(person[2]);
+        var person = {firstName:"John", lastName:"Doe", age:46};
+        console.log(person.lastName);
+        //array length
+        var fruits = ["Banana", "Orange", "Apple", "Mango"];
+        var size = fruits.length;
+        console.log(size);
+        var fruits = ["Banana", "Orange", "Apple", "Mango"];
+        var fruit = fruits[0];
+        console.log(fruit);
+        var fruits = ["Banana", "Orange", "Apple", "Mango"];
+        var fruit = fruits[fruits.length - 1];
+        console.log(fruit);
+        //tostring
+        var fruits = ["Banana", "Orange", "Apple", "Mango"];
+        var y = fruits.toString();
+        console.log(y);
+        var fruits = ["Banana", "Orange", "Apple", "Mango"];
+        console.log(fruits.join(" * "));
+        //pop
+        var fruits = ["Banana", "Orange", "Apple", "Mango"];
+        fruits.pop();
+        console.log(fruits);
+        //push
+        var fruits = ["Banana", "Orange", "Apple", "Mango"];
+        fruits.push("Kiwi");
+        console.log(fruits);
+        //shift
+        var fruits = ["Banana", "Orange", "Apple", "Mango"];
+        fruits.shift();
+        console.log(fruits);
+        //unshift
+        var fruits = ["Banana", "Orange", "Apple", "Mango"];
+        fruits.unshift("Lemon");
+        console.log(fruits);
+        //array delete
+        var fruits = ["Banana", "Orange", "Apple", "Mango"];
+        delete fruits[0];
+        console.log(fruits);
+        //concat
+        var myGirls = ["Cecilie", "Lone"];
+        var myBoys = ["Emil", "Tobias", "Linus"];
+        var myChildren = myGirls.concat(myBoys);
+        console.log(myChildren);
+        var arr1 = ["Cecilie", "Lone"];
+        var arr2 = ["Emil", "Tobias", "Linus"];
+        var arr3 = ["Robin", "Morgan"];
+        var myChildren = arr1.concat(arr2, arr3);
+        console.log(myChildren);
+        var arr1 = ["Emil", "Tobias", "Linus"];
+        var myChildren = arr1.concat("Peter"); 
+        console.log(myChildren);
+        //flattening an array
+        var myArr = [[1,2],[3,4],[5,6]];
+        var newArr = myArr.flat();
+        console.log(newArr);
+        //splice
+        var fruits = ["Banana", "Orange", "Apple", "Mango"];
+        fruits.splice(2, 0, "Lemon", "Kiwi");
+        console.log(fruits);
+        //slice
+        var fruits = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
+        var citrus = fruits.slice(1, 3);
+        console.log(citrus);
+        //automatic tostring
+        var fruits = ["Banana", "Orange", "Apple", "Mango"];
+        fruits.toString();
+        console.log(fruits);
+        //sorting an array
+        var fruits = ["Banana", "Orange", "Apple", "Mango"];
+        fruits.sort();
+        console.log(fruits);
+        //reverse an array
+        var fruits = ["Banana", "Orange", "Apple", "Mango"];
+        fruits.sort();
+        fruits.reverse();
+        console.log(fruits);
+
+
+    </script>
+</body>
+</html>
