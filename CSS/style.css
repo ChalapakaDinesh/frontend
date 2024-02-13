@@ -1,0 +1,50 @@
+body{
+	margin:opx;
+	padding:opx;
+}
+.outer wrapper{
+	width:1200px;
+	background-color:blue;
+	position:absolute;
+}
+h1{
+	color:brown;
+	padding-bottom:15px;
+	line-height:4pt;
+}
+p{
+	line-height:10pt;
+	padding-top:5px;
+	color:#444444;
+	background-color:yellow;
+}
+ul{
+	margin:10px;
+	background-color:gray;
+	width:500px;
+	float:right;
+}
+ol{
+	margin:10px;
+	background-color:gray;
+	width:500px;
+	float:left;
+}
+li{
+	padding:5px;
+	background-color:#f2f2f2;
+	margin:5px;
+	border:1px solid black;
+}
+img{
+	position:relative;
+	left:5px;
+	margin:50px;
+}
+h3{
+	color:purple;
+	font-size:80px;
+	float:left;
+	margin:50px;
+}
+	

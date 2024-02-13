@@ -1,0 +1,43 @@
+body {
+    background-color: skyblue;
+    font-family: Arial, sans-serif;
+}
+.nav {
+    background-color: white;
+    color: black;
+    padding: 10px;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+}
+.logo img {
+    width: 5px; 
+    margin-right: 10px;
+}
+.menu ul {
+    list-style: none;
+}
+.menu ul li {
+    display: inline;
+    margin-right:10px;
+}
+.strategies {
+    text-align: center;
+    padding: 20px;
+}
+.strategies h1 {
+    font-size: 24px;
+    color: #333;
+}
+.strategies p {
+    font-weight: bold;
+}
+.strategies button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}

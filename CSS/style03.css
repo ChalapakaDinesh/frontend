@@ -1,0 +1,142 @@
+body {
+	box-sizing:border-box ;
+    padding:0%;
+    margin:auto;
+    font-family: Arial, sans-serif;
+}
+.body ul {
+    list-style: none;
+  }
+.body ul li {
+    display: inline;
+    margin-right: 20px;
+  }
+.body {
+    background-color: rgb(219, 101, 101);
+	opacity:0.9;
+    justify-content: space-around;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+  }
+.backgr{
+    width: 100%;
+    height:100vh;
+    background-image: url(../image/mountain.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+}
+.nav {
+    background-color: rgb(219, 101, 101);
+    opacity: 0.9;
+    color: black;
+    padding: 10px;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+}
+.logo img {
+    width: 20px; 
+    height:20px;
+    margin-right: 10px;
+}
+.menu ul {
+    list-style: none;
+}
+.menu ul li {
+    display: inline;
+    margin-right:10px;
+}
+.strategies {
+    text-align: left;
+    padding: 20px;
+    margin-top: 150px;
+}
+.strategies h1 {
+    margin-left: 50px;
+    font-size: 35px;
+    color: white;
+}
+.strategies p {
+    margin-left: 50px;
+    font-weight: bold;
+}
+.strategies button {
+    margin-left: 50px;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+.pk{
+    background-image: url(../image/back1.jpg);
+    width: 100%;
+    height:100vh;
+    background-size: cover;
+    background-position: center;
+}
+.outdoors{
+    position: absolute;
+    left:10%;
+    top:120%;
+}
+.sp{
+    list-style-type: none;
+    display: inline;
+    padding:0px 70px;
+    width: 100px;
+    height: 200px;
+}
+.shopproducts{
+    width: 170px;
+    height: 270px;
+}
+.donate{
+    width: 170px;
+    height: 270px;
+}
+.giftcard{
+    width: 170px;
+    height: 270px;
+}
+.kkk h1{
+    position: relative;
+    top:300px;
+    left:200px;
+    margin-left: 200px;
+    font-size: 20px;
+    color: black;
+}
+.kkk h3{
+    position: relative;
+    top:300px;
+    left:200px;
+    margin-left: 200px;
+    font-size: 20px;
+    color: black;
+}
+.kkk button{
+    margin-left: 2px;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    position: relative;
+    left:450px;
+    right: auto;
+    top:320px;
+}
+.backgro{
+    background-image: url(../image/back2.jpg);
+    width: 100%;
+    height:100vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+}

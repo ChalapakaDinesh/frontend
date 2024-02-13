@@ -1,0 +1,57 @@
+body {
+    font-family: Arial, sans-serif;
+}
+.backgr{
+    width: 100%;
+    height:100vh;
+    background-image: url(../image/mountain.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+}
+.nav {
+    background-color: rgb(219, 101, 101);
+    opacity: 0.9;
+    color: black;
+    padding: 10px;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+}
+.logo img {
+    width: 20px; 
+    height:20px;
+    margin-right: 10px;
+}
+.menu ul {
+    list-style: none;
+}
+.menu ul li {
+    display: inline;
+    margin-right:10px;
+}
+.strategies {
+    text-align: left;
+    padding: 20px;
+    margin-top: 150px;
+}
+.aaa{
+    margin-left: 50px;
+    font-size: 35px;
+    color: white;
+}
+.bbb{
+	color:white;
+    margin-left: 50px;
+}
+.strategies button {
+    margin-left: 50px;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
